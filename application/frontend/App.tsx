@@ -1,17 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View, TouchableOpacity } from 'react-native';
-import "./global.css";
+import { NavigationContainer } from '@react-navigation/native';
+import BottomTabs from './components/BottomTabs';
+
 
 export default function App() {
   return (
-
-    <View className="flex-1 items-center justify-center bg-gray-700">
-      <Text className="text-2xl font-bold text-pink-300">ZenZone</Text>
-      <StatusBar style="auto" />
-      <TouchableOpacity>
-        <Text>Hellooooi</Text>
-      </TouchableOpacity>
-    </View>
-    
+    <NavigationContainer>
+      <StatusBar style="light" translucent />
+      <BottomTabs />
+    </NavigationContainer>
   );
 }
