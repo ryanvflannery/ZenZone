@@ -22,7 +22,7 @@
         "assets/*"
       ],
       "@screens/*": [
-        "screens/*"
+        "src/screens/*"
       ],
       "@utils/*": [
         "utils/*"
@@ -31,8 +31,8 @@
   },
   "include": [
     "./",
-    "App.tsx",
-    "index.ts",
+    "src/App.tsx",
+    "src/index.ts",
     "components/**/*",
     "nativewind-env.d.ts"
   ],
