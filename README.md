@@ -18,11 +18,6 @@ CSC 660 Final Project – Spring 2025
 - Profile screen displaying session statistics.
 - Streak tracker showing day of year progress.
 
-## Nice-to-Have Features (Partially implemented)  
-- UI polish and subtle animations.
-- Light data persistence via state (no backend).
-- Visual improvements using gradients, shadows, and themed styling.
-
 ## Technologies Used  
 - React Native  
 - Expo  
