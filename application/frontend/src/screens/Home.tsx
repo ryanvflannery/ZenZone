@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Text, View, SafeAreaView, StyleSheet, ActivityIndicator } from "react-native";
+import { Text, View, SafeAreaView, StyleSheet, ActivityIndicator, Pressable } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
 import axios from "axios";
 import { EXPO_PUBLIC_API_URL } from "@env";
 import "global.css";
+import { useNavigation } from '@react-navigation/native';
 
 
 interface ApiResponse {
@@ -14,6 +15,7 @@ interface ApiResponse {
 const Home = () => {
   const [message, setMessage] = useState(""); // Store API response
   const [loading, setLoading] = useState(true); // Track loading state
+  const navigation = useNavigation<any>();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,8 +47,9 @@ const Home = () => {
       />
 
       {/* Main Content */}
-      <SafeAreaView style={{ flex: 1 }}>
+            <SafeAreaView className="flex-1 items-center justify-start">
         <Text className="text-4xl font-bold text-white absolute top-14 left-6 pt-3">ZenZone</Text>
+        <Text className="absolute top-16 right-10 text-2xl opacity-120">🕯️</Text>
 
         {/* Centered Content */}
         <View className="flex-1 items-center justify-start pt-72">
@@ -56,11 +59,25 @@ const Home = () => {
           </Text>
 
           {/* Show loading indicator while fetching API */}
+          {/* 
           {loading ? (
-            <ActivityIndicator size="large" color="#CF9FFF" className="mt-6" />
+          <ActivityIndicator size="large" color="#CF9FFF" className="mt-6" />
           ) : (
-            <Text className="text-lg text-white opacity-90 text-center mt-4">{message}</Text>
+          <Text className="text-lg text-white opacity-90 text-center mt-4"></Text>
           )}
+          */}
+
+          <Text className="text-xl text-white/80 left-3 mt-10">Welcome back, Ryan 👋</Text>
+          <Text className="mt-2 text-white/90 text-md">🔥 Streak: 6 days focused</Text>
+          <Pressable
+          className="mt-6 px-6 py-3 bg-purple-600 rounded-lg"
+          onPress={() => navigation.navigate('ZenMode')}
+          >
+          <Text className="text-white font-semibold text-lg">Start Focus Session</Text>
+          </Pressable>
+  
+
+
         </View>
       </SafeAreaView>
     </>
