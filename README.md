@@ -24,3 +24,11 @@ CSC 680 Final Project – Spring 2025
 - TypeScript  
 - NativeWind (Tailwind CSS for React Native)  
 - LayoutAnimation for smooth UI interactions
+
+## 📸 Screenshots
+
+![Screenshot 2025-05-20 at 6 37 17 PM](https://github.com/user-attachments/assets/7fd8fec2-b9e8-4554-b4e7-1fe484f38d1e)
+![Screenshot 2025-05-20 at 6 32 44 PM](https://github.com/user-attachments/assets/ea599955-ee26-4aa6-b25a-2e3f3f9c7be5)
+![Screenshot 2025-05-20 at 6 29 38 PM](https://github.com/user-attachments/assets/db58155e-2f7d-4b57-b4e8-9f062cf71508)
+![Screenshot 2025-05-20 at 6 29 06 PM](https://github.com/user-attachments/assets/c854150d-d92a-4356-b8a6-299c8c74077e)
+
