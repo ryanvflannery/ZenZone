@@ -4,7 +4,7 @@ ZenZone is a focus-driven accountability app designed to help users actually get
 ## Developer  
 **Ryan Flannery**  
 San Francisco State University  
-CSC 660 Final Project – Spring 2025
+CSC 680 Final Project – Spring 2025
 
 ## Purpose  
 - Build a functional mobile application that represents the knowledge gained in CSC 660.  
